@@ -17,5 +17,4 @@ public abstract class Batiments implements IBatiments {
 		Nom = nom;
 		ID = id;
 	}
-
 }
