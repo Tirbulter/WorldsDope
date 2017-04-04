@@ -11,8 +11,10 @@ public class Main {
 		
 		LoiNormal loi= new LoiNormal();
 		int loie[]=new int[1000];
-		for(int i=0;i<1000;i++)
-			loie[i]=(int)(loi._loi_normale(2000,250));
+		for(int i=0;i<1000;i++) {
+			double d = loi._loi_normale(2000,250);
+			loie[i]=(int)d;
+		}
 		
 		String csvFile = "C:/Users/Bastien/workspace/WorldsDope/DopwarStat.csv";
 		//chargerStatPlaces(csvFile);

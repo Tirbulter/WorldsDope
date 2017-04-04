@@ -1,7 +1,5 @@
 package Batiment;
 
-import Interface.Batiments;
-
 public class Commissariat extends Batiments {
 
 	Commissariat(){

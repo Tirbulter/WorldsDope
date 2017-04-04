@@ -1,7 +1,5 @@
 package Personnage;
 
-import Interface.IPersonnages;
-
 public class Joueur extends IPersonnages {
 	private int nbDroguePortee;
 

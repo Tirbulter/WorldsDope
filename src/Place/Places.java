@@ -4,7 +4,7 @@ import java.io.FileReader;
 
 import Batiment.Batiments;
 
-public abstract class Places {
+public abstract class Places implements IPlaces {
 	private String nomPlace;
 	private double[] proba;
 	// Acide, Amphet, Champignon, Cocaïne, Extasie, Hashish, Heroine, Mescaline,
@@ -33,7 +33,7 @@ public abstract class Places {
 	public void setProba(double[] proba) {
 		this.proba = proba;
 	}
-  
+
 	public Batiments getBatiment() {
 		return batiment;
 	}
@@ -42,9 +42,8 @@ public abstract class Places {
 		this.batiment = batiment;
 	}
 
-	private double[] recupStat(FileReader FR, int ligne) {
+	 public double[] recupStat(FileReader FR, int ligne) {
 		// To Do lecture du fichier texte pour proba
-
 		return null;
 	}
 }

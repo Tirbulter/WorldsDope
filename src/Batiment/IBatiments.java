@@ -1,8 +1,7 @@
 package Batiment;
 
 public interface IBatiments {
-	int id=0;
-	String=null;
+	int ID = 0;
+	String nomBatiment = null;
 
-	int CalcDegat();
 }
