@@ -1,6 +1,6 @@
 package Batiment;
 
-import Interface.IBatiments;
+import Batiment.IBatiments;
 
 public abstract class Batiments implements IBatiments {
 	String Nom;

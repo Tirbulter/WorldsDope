@@ -1,6 +1,6 @@
 package Places;
 
-import Interface.Places;
+import Places.Places;
 
 public class GareDuNord extends Places {
 
