@@ -1,6 +1,6 @@
 package Armes;
 
-import Interface.IArmes;
+import Armes.IArmes;
 
 public abstract class Armes implements IArmes {
 	static int DegatMax;
@@ -42,7 +42,7 @@ public abstract class Armes implements IArmes {
 	}
 
 	/* Calcule les dégats qu'apporte l'arme */
-	int CalcDegat() {
+	public int CalcDegat() {
 		return (int) (getDegatMin() + Math.random() * (getDegatMax() - getDegatMin()));
 	}
 }

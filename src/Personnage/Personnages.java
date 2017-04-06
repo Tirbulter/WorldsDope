@@ -1,11 +1,10 @@
 package Personnage;
 
 import Armes.Armes;
-import Interface.IArmes;
+import Armes.IArmes;
 
 public abstract class Personnages implements IPersonnages{
 	static int PV=100;
-	static double ProbaToucher=0;
 	static int Degat=10;
 	static Armes Arme=null;
 	
@@ -17,16 +16,14 @@ public abstract class Personnages implements IPersonnages{
 	
 	public static int getPV() { return PV; }
 	public static void setPV(int pv) {}
-
-	public static double getProbaToucher() { return ProbaToucher; }
-	public static void setProbaToucher(double probaToucher) {}
 	
 	/*constructeur*/
-	Personnages(double probaTouch){ ProbaToucher=probaTouch; }
+	Personnages(){}
 	
 	public static int tirer(){
-		if(Math.random()>ProbaToucher){
-			return Degat + (Arme==null?0:Arme.getDegat());
+		//70% de chance de toucher pour les personnages
+		if(Math.random()>0.3){
+			return Degat + (Arme==null?0:Armes.getDegat());
 		}else{
 			return 0;
 		}

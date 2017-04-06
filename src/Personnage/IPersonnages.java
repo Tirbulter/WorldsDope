@@ -1,10 +1,9 @@
 package Personnage;
 
-import Interface.IArmes;
+import Armes.IArmes;
 
 public interface IPersonnages {
 	int PV=100;
-	double ProbaToucher=0;
 	int Degat=10;
 	IArmes Arme=null;
 	
@@ -17,8 +16,5 @@ public interface IPersonnages {
 	
 	public static int getPV() { return PV; }
 	public static void setPV(int pv) {}
-
-	public static double getProbaToucher() { return ProbaToucher; }
-	public static void setProbaToucher(double probaToucher) {}
 		
 }

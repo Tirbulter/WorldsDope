@@ -1,10 +1,10 @@
 package Personnage;
 
-public class Joueur extends IPersonnages {
+public class Joueur extends Personnages {
 	private int nbDroguePortee;
 
 	Joueur() {
-		super(0.1);
+		super();
 	}
 
 	public int getNbDroguePortee() {

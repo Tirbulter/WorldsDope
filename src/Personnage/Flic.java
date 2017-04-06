@@ -1,8 +1,8 @@
 package Personnage;
 
-public class Flic extends IPersonnages {
+public class Flic extends Personnages {
 	Flic() {
-		super(0.25);
+		super();
 	}
 	
 }
